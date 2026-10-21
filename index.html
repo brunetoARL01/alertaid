@@ -10,6 +10,21 @@
 @media(max-width:780px){.layout{grid-template-columns:1fr}.intro{align-items:flex-start;flex-direction:column}.private-tag{align-self:flex-start}.shell{padding-top:23px}.card-body{padding:18px}.card-head{padding:18px}.preview{padding:22px}.top-note{display:none}}@media(max-width:420px){.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.profile-top h3{font-size:18px}.status{font-size:9px}.intro h1{font-size:30px}.actions .btn{flex:1}}
 
 .call-link.call-whatsapp{background:#25d366!important;color:#083b20!important;border-color:#25d366!important}.call-link.call-fire{background:#dc771c!important;color:#fff!important;border-color:#dc771c!important}.service-desc{margin:2px 0 12px;color:#e3f1eb;font-size:12px;line-height:1.45}.emergency-actions .call-link[hidden]{display:none!important}
+
+/* AlertaID: ajuste visual de contactos y servicios, sin modificar funciones */
+.emergency-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:10px;row-gap:10px;margin-top:22px}
+.emergency-actions h4,.emergency-actions .call-medical,.emergency-actions .call-police,.emergency-actions .call-fire,.emergency-actions .service-desc,.emergency-actions .call-note{grid-column:1/-1}
+.emergency-actions h4{margin:0 0 6px;font-size:12px}
+.emergency-actions .call-link{min-width:0;min-height:46px;padding:11px 9px;border-radius:11px;font-size:12px;line-height:1.35;font-weight:750;overflow-wrap:anywhere;word-break:normal;transition:filter .15s ease,transform .15s ease}
+.emergency-actions .call-link:hover{filter:brightness(1.07)}
+.emergency-actions .call-family{background:#168562;color:#fff;border:1px solid #42ad8a}
+.emergency-actions .call-whatsapp{background:#25d366!important;color:#083b20!important;border:1px solid #5deb91!important}
+.emergency-actions .call-medical{background:#c83b3b;color:#fff;margin-top:12px;font-size:14px;min-height:48px}
+.emergency-actions .call-police{background:#f2f5f2;color:#194c3d;font-size:14px;min-height:48px}
+.emergency-actions .call-fire{background:#dc771c!important;color:#fff!important;font-size:14px;min-height:48px}
+.emergency-actions .service-desc{margin:-4px 2px 8px;font-size:11px;line-height:1.45;color:#e3f1eb}
+.emergency-actions .call-note{margin:4px 0 0;font-size:10px;line-height:1.5}
+@media(max-width:420px){.emergency-actions{column-gap:7px}.emergency-actions .call-link{font-size:11px;padding:10px 7px}.emergency-actions .call-medical,.emergency-actions .call-police,.emergency-actions .call-fire{font-size:13px}}
 </style></head>
 <body><div id="app"><header class="topbar"><div class="brand"><div class="logo">✚</div><div>Alerta<span style="color:#b6e8d1">ID</span></div></div><div class="top-note">PERFIL DE EMERGENCIA · PROTOTIPO PERSONAL</div></header>
 <main class="shell"><section class="intro"><div><div class="eyebrow">Tu información, cuando importa</div><h1>Tu perfil de emergencia</h1><p>Completá tus datos paso a paso. La tarjeta de la derecha se actualizará automáticamente para mostrar cómo verá tu información alguien que necesite ayudarte.</p></div><div class="private-tag">● Prototipo privado</div></section>
